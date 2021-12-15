@@ -1,0 +1,46 @@
+
+
+.emoji{
+  background: #ddd;
+  box-shadow: 3px 3px 10px 1px; 
+  width: 210px;
+  height: 150px;
+  margin: 50px auto;
+  overflow-y:scroll;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.emoji_mano,.emoji_cara{
+ display: flex;
+ flex-wrap: wrap;
+ font-size: 30px;
+ list-style: none;
+ height: 300px;
+ display: flex;
+ flex-wrap: wrap;
+justify-content: space-evenly;
+}
+li{
+  transition: all 0.5s;
+}
+li:hover{
+  font-size: 33px;
+  cursor: grab;
+  
+}
+#contenido{
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+  margin: 10px auto;
+}
+#contenido::placeholder{
+  font-size: 25px;
+  text-align: center;
+  color: #00f9;
+}
+
+
+

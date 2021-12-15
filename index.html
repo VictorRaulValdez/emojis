@@ -1,0 +1,51 @@
+<DOCTYPE html>
+  <html>
+
+  <head>
+    <title>css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+     <h1>organizador visula de acuerdo con su carrera</h1>
+    <center><input type="text" id="contenido" placeholder="Escribe aquí"> </center>
+    <div class="emoji">
+      <div class="emoji_cara" id="cara">
+        <li>😃</li><li>😀</li><li>😆</li><li>😂</li>
+        <li>🤠</li><li>🤤</li><li>🤗</li><li>😒</li>
+        <li>😧</li><li>😱</li><li>😎</li><li>🤒</li>
+        <li>😍</li><li>😡</li><li>😂</li><li>😅</li>
+        <li>😜</li><li>😝</li><li>😟</li><li>😣</li>
+        <li>😮</li><li>🤤</li><li>😢</li><li>😭</li>
+      </div>
+      <div class="emoji_mano" id="manos">
+        <li>👐</li><li>👏</li><li>🤝</li><li>👍</li>
+        <li>👎</li><li>👊</li><li>✊</li><li>🤛</li>
+        <li>🤜</li><li>🤞</li><li>✌</li><li>🤘</li>
+        <li>👌</li><li>👈</li><li>👉</li><li>👆</li>
+        <li>👇</li><li>☝</li><li>✋</li><li>🤚</li>
+        <li>🖐</li><li>🤙</li><li>👋</li>
+      </div>
+    </div>
+  </body>
+  <script>
+    let caja=document.getElementById('contenido');
+    let emoji_mano = document.getElementById('manos');
+    let mano = emoji_mano.querySelectorAll('li');
+    let emoji_cara=document.getElementById('cara');
+    let cara=emoji_cara.querySelectorAll('li');
+    for (let i = 0; i < mano.length; i++) {
+      mano[i].onclick = function (e) {
+        caja.value+=mano[i].textContent;
+      }
+    }
+    for (let i = 0; i <cara.length; i++) {
+      cara[i].onclick = function (e) {
+        caja.value+=cara[i].textContent;
+      }
+    }
+  </script>
+
+  </html>
