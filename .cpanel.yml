@@ -1,0 +1,5 @@
+--- 
+ deployment:
+    tasks:
+    - export DEPLOYPATH=/home2/vproyect1/public_html/
+    -/bin/rsync
