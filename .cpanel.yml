@@ -2,4 +2,5 @@
  deployment:
     tasks:
     - export DEPLOYPATH=/home2/vproyect1/public_html/
-    -/bin/rsync
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp index.css $DEPLOYPATH
